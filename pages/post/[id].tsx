@@ -1,0 +1,9 @@
+import { useRouter } from "next/router";
+import * as React from "react";
+
+export interface PostIdProps {}
+
+export default function PostId(props: PostIdProps) {
+  const router = useRouter();
+  return <div>{JSON.stringify(router.query)}</div>;
+}
